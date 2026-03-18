@@ -3,6 +3,11 @@
 Bash script สำหรับเปลี่ยน WordPress virtual cron (wp-cron.php) เป็น system cron job จริงบนเซิร์ฟเวอร์ cPanel/WHM
 
 หา document root อัตโนมัติ, สุ่มเวลา cron, ปิด wp-cron ใน wp-config.php และสร้าง cron job ใน cPanel ให้ทั้งหมด
+## ติดตั้ง
+
+```bash
+bash <(curl -sL https://raw.githubusercontent.com/AnonymousVS/cpanel-wp-cron-add/main/add-wp-cron.sh) domain.com
+```
 
 ## ปัญหา
 
@@ -33,11 +38,6 @@ Script นี้ปิด virtual wp-cron แล้วสร้าง system cro
 - เซิร์ฟเวอร์ cPanel/WHM พร้อม root access
 - เว็บไซต์ WordPress ที่จัดการผ่าน cPanel
 
-## ติดตั้ง
-
-```bash
-bash <(curl -sL https://raw.githubusercontent.com/AnonymousVS/cpanel-wp-cron-add/main/add-wp-cron.sh) domain.com
-```
 
 ## วิธีใช้
 
