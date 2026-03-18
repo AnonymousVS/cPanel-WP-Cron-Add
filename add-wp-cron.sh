@@ -53,7 +53,7 @@ MIN2_FMT=$(printf "%d" $MIN2)
 
 CRON_SCHEDULE="${MIN1_FMT},${MIN2_FMT} * * * *"
 CRON_CMD="cd ${DOCROOT} && /usr/local/bin/php ${DOCROOT}/wp-cron.php"
-CRON_LINE="${CRON_SCHEDULE} ${CRON_CMD}"
+CRON_LINE="${CRON_SCHEDULE} ${CRON_CMD} #ตั้งเวลาลงบทความน้องทราย"
 
 echo "[INFO] Cron Schedule: ${CRON_SCHEDULE} (ทุก 30 นาที)"
 
