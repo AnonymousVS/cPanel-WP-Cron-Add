@@ -36,14 +36,6 @@ Script นี้ปิด virtual wp-cron แล้วสร้าง system cro
 ## ติดตั้ง
 
 ```bash
-curl -sL https://raw.githubusercontent.com/AnonymousVS/cpanel-wp-cron-add/main/add-wp-cron.sh -o /root/add-wp-cron.sh
-curl -sL https://raw.githubusercontent.com/AnonymousVS/cpanel-wp-cron-add/main/bulk-add-wp-cron.sh -o /root/bulk-add-wp-cron.sh
-chmod +x /root/add-wp-cron.sh /root/bulk-add-wp-cron.sh
-```
-
-หรือรันตรงจาก GitHub เลย:
-
-```bash
 bash <(curl -sL https://raw.githubusercontent.com/AnonymousVS/cpanel-wp-cron-add/main/add-wp-cron.sh) domain.com
 ```
 
